@@ -356,7 +356,7 @@
                             {{#  }); }}
                         </script>
                         <script type="text/javascript">
-                            $.get("//api.smallyoung.cn/web/findRecommendArticle", function (res) {
+                            $.get("//cdn.smallyoung.cn/data/recommended_articles.json", function (res) {
                                 laytpl($("#recommendedArticlesTemplate").html()).render(res.data, function (html) {
                                     $("#recommendedArticles").html(html);
                                 });
